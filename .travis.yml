@@ -14,7 +14,7 @@ before_install:
   - cd ..
 
 script:
-  - cd travis-ci-test
+  - cd redis-cli-cs
   # build redis-cli-cs
   - make
   # build and run tests
