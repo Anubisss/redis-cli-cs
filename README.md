@@ -3,6 +3,8 @@ A C++ Redis CLI client connection string (URI) connector.
 
 Basically the program parses its first parameter/argument which is a connection string (URI) to a Redis server, then launches the redis-cli program with the proper parameters to connect to a Redis server.
 
+[Installation and usage video.](https://asciinema.org/a/6mw5dp9jj8oy4i103e6vcuarp)
+
 # Install
 The program works on UNIX systems where the redis-cli (redis-tools) client is avaiable. You have to compile the source code. You need the [g++](https://gcc.gnu.org/) compiler, and the [GNU make](https://www.gnu.org/software/make/).
 
