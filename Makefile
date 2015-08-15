@@ -28,7 +28,7 @@ INSTALL = install
 
 OUT_FILE = bin/redis-cli-cs
 
-OBJECTS = RedisConnectionStringParser.o main.o
+OBJECTS = RedisConnectionStringParser.o Main.o
 SRC = src
 
 $(OUT_FILE): $(OBJECTS)
@@ -37,7 +37,7 @@ $(OUT_FILE): $(OBJECTS)
 RedisConnectionStringParser.o: $(SRC)/RedisConnectionStringParser.cpp
 	$(CC) $(CXXFLAGS) $(SRC)/RedisConnectionStringParser.cpp
 
-main.o: $(SRC)/Main.cpp
+Main.o: $(SRC)/Main.cpp
 	$(CC) $(CXXFLAGS) $(SRC)/Main.cpp
 
 clean:
