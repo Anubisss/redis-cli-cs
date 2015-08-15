@@ -1,0 +1,12 @@
+*.o
+*.out
+
+.vagrant
+
+docs/*
+!docs/.gitkeep
+
+bin/*
+test/bin/*
+!bin/.gitkeep
+!test/bin/.gitkeep
