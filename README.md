@@ -8,10 +8,7 @@ The program works on UNIX systems where the redis-cli (redis-tools) client is av
 
 If you want to compile and run the unit tests you need the [GoogleTest](https://code.google.com/p/googletest/) lib.
 
-First you have to clone the repository:
-```
-git clone https://github.com/Anubisss/redis-cli-cs
-```
+First you have to clone the repository: ```git clone https://github.com/Anubisss/redis-cli-cs```
 
 Then you compile the source and install the program:
 ```
@@ -20,10 +17,9 @@ make
 sudo make install
 ```
 
-``Make install`` copies the redis-cli-cs executable program to the /usr/local/bin directory.
+```Make install``` copies the redis-cli-cs executable program to the /usr/local/bin directory.
 
-So if you want to "uninstall" the program just delete the executable:``
-rm /usr/local/bin/redis-cli-cs``
+So if you want to "uninstall" the program just delete the executable: ```rm /usr/local/bin/redis-cli-cs```
 
 # Documentation
 To get HTML documentation into the docs directory, just use [Doxygen](http://doxygen.org/) in the source root directory.
@@ -62,11 +58,11 @@ You have to use this command:
 redis-cli-cs redis://:passw@localhost:12345/6
 ```
 
-Which will execute the following command: ``redis-cli -a "passw" -h "localhost" -p "12345" -n "6"``
+Which will execute the following command: ```redis-cli -a "passw" -h "localhost" -p "12345" -n "6"```
 
-If you want to pass params to redis-cli: ``redis-cli-cs redis://:passw@localhost:12345/6 --bigkeys --latency-history``
+If you want to pass params to redis-cli: ```redis-cli-cs redis://:passw@localhost:12345/6 --bigkeys --latency-history```
 
-Will execute this: ``redis-cli -a "passw" -h "localhost" -p "12345" -n "6" --bigkeys --latency-history``
+Will execute this: ```redis-cli -a "passw" -h "localhost" -p "12345" -n "6" --bigkeys --latency-history```
 
 **The redis-cli program have to be in your PATH to make redis-cli-cs workable.**
 
